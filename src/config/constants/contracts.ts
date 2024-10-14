@@ -1,6 +1,6 @@
 const contracts = {
   multisend: {
-    55007: '0x5Eae11B54bDeBD5D268Ae787B841F6dd5Af932bc',
+    55007: '0x4c7D10017cEdDA5336E742172cDB918b0cce26c2',
     55004: '0x129286C288228a462b107a526182Bc91DA7E3357'
   },
   usdc: {
