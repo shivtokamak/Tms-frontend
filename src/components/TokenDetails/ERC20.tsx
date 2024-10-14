@@ -127,33 +127,33 @@ const TokenDetails: React.FC<TokenDetailsProps> = ({
       >
         &times;
       </button>
-      <div className="text-center mb-1 sm:mb-2">
-        <h3 className="text-l lg:text-lg md:text-lg  font-sans text-gray-900">
+      <div className=" mb-1 sm:mb-2">
+        <h3 className="text-l lg:text-lg md:text-lg  font-sans text-gray-900 font-semibold">
           {tokenDetails?.name} ({tokenDetails?.symbol})
         </h3>
       </div>
-      <div className="grid grid-cols-2 gap-2 sm:gap-4">
+      <div className="grid grid-rows">
         <div className="flex flex-row items-center mt-2 sm:mt-4">
           <span className="text-gray-700 break-words">Balance:</span>
-          <span className="font-sans text-gray-900 ml-1 sm:ml-2 ">
+          <span className="font-sans font-semibold text-gray-900 ml-1 sm:ml-2 ">
             {tokenDetails?.balanceOf ? formatLargeNumber(tokenDetails.balanceOf) : '0'}
           </span>
         </div>
         <div className="flex flex-row items-center mt-2 sm:mt-4">
           <span className="text-gray-700 break-words">Decimals:</span>
-          <span className="font-sans text-gray-900 ml-1 sm:ml-2 ">
+          <span className="font-sans font-semibold text-gray-900 ml-1 sm:ml-2 ">
             {tokenDetails?.decimals}
           </span>
         </div>
         <div className="flex flex-row items-center mt-2 sm:mt-4">
           <span className="text-gray-700 break-words">TotalSupply:</span>
-          <span className="font-sans text-gray-900 ml-1 sm:ml-2">
+          <span className="font-sans font-semibold text-gray-900 ml-1 sm:ml-2">
             {tokenDetails?.totalSupply ? formatLargeNumber(tokenDetails.totalSupply) : '0'}
           </span>
         </div>
         <div className="flex flex-row items-center mt-2 sm:mt-4">
           <span className="text-gray-700 break-words">Allowance:</span>
-          <span className="font-sans text-gray-900 ml-2 ">
+          <span className="font-sans font-semibold text-gray-900 ml-2 ">
             {tokenDetails?.allowance ? formatLargeNumber(tokenDetails.allowance) : '0'}
           </span>
         </div>
