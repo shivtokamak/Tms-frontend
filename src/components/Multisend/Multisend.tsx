@@ -83,13 +83,13 @@ export function Multisend() {
     if (tokenAddress && totalAmount) {
       if (tokenAddress === ethers.ZeroAddress) {
         if (ethBalance && ethBalance.value < ethers.parseEther(totalAmount)) {
-          setWarningMessage('Insufficient ETH balance for MultiSend');
+          setWarningMessage('Insufficient ETH balance');
         } else {
           setWarningMessage(null);
         }
       } else if (tokenDetails) {
         if (Number(tokenDetails.balanceOf) < Number(totalAmount)) {
-          setWarningMessage(`Insufficient ${tokenDetails.symbol} balance for MultiSend`);
+          setWarningMessage(`Insufficient ${tokenDetails.symbol} balance`);
         } else {
           setWarningMessage(null);
         }

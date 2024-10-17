@@ -146,7 +146,7 @@ const TokenDetails: React.FC<TokenDetailsProps> = ({
           </span>
         </div>
         <div className="flex flex-row items-center mt-2 sm:mt-4">
-          <span className="text-gray-700 break-words">TotalSupply:</span>
+          <span className="text-gray-700 break-words">Total Supply:</span>
           <span className="font-sans font-semibold text-gray-900 ml-1 sm:ml-2">
             {tokenDetails?.totalSupply ? formatLargeNumber(tokenDetails.totalSupply) : '0'}
           </span>
